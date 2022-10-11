@@ -1,0 +1,15 @@
+let currentUsers = ["admin","Mamoon", "Ahmed", "Haseeb", "mutthar"];
+//convert all users into lower case
+const current_users = currentUsers.map((user)=> user.toLowerCase())
+
+let newUsers = ["usama", "Mutthar", "Shoain", "Ali", "Usman"];
+//convert all users into lower case
+const new_users = newUsers.map((user)=> user.toLowerCase())
+
+
+//checking the username is taken or not
+const result = new_users.filter((user)=>current_users.includes(user))
+
+
+console.log("%s is taken",result.toString())
+
